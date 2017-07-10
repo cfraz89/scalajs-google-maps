@@ -20,7 +20,7 @@ lazy val demo = (project in file("demo"))
 
 lazy val demoSettings = Seq(
   name := s"gmap-demo",
-  scalaVersion := "2.11.6",
+  scalaVersion := "2.12.2",
   libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.9.0"
   )
@@ -34,12 +34,10 @@ version := "0.0.2"
 
 organization := "io.surfkit"
 
-scalaVersion := "2.11.6"
-
-crossScalaVersions := Seq("2.10.4", "2.11.5")
+scalaVersion := "2.12.2"
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.0"
+  "org.scala-js" %%% "scalajs-dom" % "0.9.3"
 )
 
 jsDependencies in Test += RuntimeDOM
